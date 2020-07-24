@@ -49,3 +49,18 @@ D:\Documents\VS 2019\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\D
 D:\Documents\VS 2019\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.exe
 D:\Documents\VS 2019\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.pdb
 D:\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.formAbout.resources
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\bin\Debug\SeasideSouthPark.exe.config
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\bin\Debug\SeasideSouthPark.exe
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\bin\Debug\SeasideSouthPark.pdb
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.csprojAssemblyReference.cache
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.formAbout.resources
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.formAccount.resources
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.formHome.resources
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.formLogin.resources
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.Properties.Resources.resources
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.formSignUp.resources
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.csproj.GenerateResource.cache
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.csproj.CopyComplete
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.exe
+C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideSouthPark\obj\Debug\SeasideSouthPark.pdb

@@ -236,7 +236,7 @@ namespace SeasideSouthPark
                 string phone = txtPhone.Text;
                 string password = txtPassword.Text;
 
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
                 string qry = "Insert into tblUser Values ('" + username + "','" + fname + "','" + lname + "','" + email + "','" + phone + "','" + password + "','" + null +"','" + null + "','" + null + "')";
                 SqlCommand cmd = new SqlCommand(qry, con);
 
