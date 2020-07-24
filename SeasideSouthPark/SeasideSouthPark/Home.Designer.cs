@@ -348,7 +348,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(425, 51);
+            this.pictureBox6.Location = new System.Drawing.Point(213, 14);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(180, 173);
             this.pictureBox6.TabIndex = 5;
@@ -360,7 +360,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(128, 166);
+            this.pictureBox5.Location = new System.Drawing.Point(15, 14);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(180, 173);
             this.pictureBox5.TabIndex = 4;
@@ -372,7 +372,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(266, 147);
+            this.pictureBox3.Location = new System.Drawing.Point(15, 14);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(180, 173);
             this.pictureBox3.TabIndex = 2;
@@ -383,7 +383,7 @@
             // 
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(15, 14);
+            this.pictureBox4.Location = new System.Drawing.Point(213, 14);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(180, 173);
             this.pictureBox4.TabIndex = 3;

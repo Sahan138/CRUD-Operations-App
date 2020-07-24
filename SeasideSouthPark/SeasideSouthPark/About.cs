@@ -81,5 +81,10 @@ namespace SeasideSouthPark
         {
             System.Diagnostics.Process.Start("https://www.linkedin.com/in/anuda-nethmin-67191614a/");
         }
+
+        private void pnlAboutBG_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
