@@ -73,7 +73,7 @@
             this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Transparent;
             this.btnClose.Location = new System.Drawing.Point(369, 8);
             this.btnClose.Name = "btnClose";
@@ -102,7 +102,7 @@
             this.btnBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.Color.Transparent;
             this.btnBack.Location = new System.Drawing.Point(343, 8);
             this.btnBack.Name = "btnBack";
@@ -123,7 +123,7 @@
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 663);
+            this.panel1.Location = new System.Drawing.Point(0, 651);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(400, 137);
             this.panel1.TabIndex = 6;
@@ -141,11 +141,11 @@
             // 
             this.txtFName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
             this.txtFName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtFName.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFName.ForeColor = System.Drawing.Color.Gray;
             this.txtFName.Location = new System.Drawing.Point(5, 9);
             this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(225, 24);
+            this.txtFName.Size = new System.Drawing.Size(225, 22);
             this.txtFName.TabIndex = 0;
             this.txtFName.Text = "First Name";
             this.txtFName.Enter += new System.EventHandler(this.txtFName_Enter);
@@ -165,11 +165,11 @@
             // 
             this.txtLName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
             this.txtLName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLName.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLName.ForeColor = System.Drawing.Color.Gray;
             this.txtLName.Location = new System.Drawing.Point(5, 9);
             this.txtLName.Name = "txtLName";
-            this.txtLName.Size = new System.Drawing.Size(225, 24);
+            this.txtLName.Size = new System.Drawing.Size(225, 22);
             this.txtLName.TabIndex = 0;
             this.txtLName.Text = "Last Name";
             this.txtLName.Enter += new System.EventHandler(this.txtLName_Enter);
@@ -199,11 +199,11 @@
             // 
             this.txtUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
             this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUserName.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserName.ForeColor = System.Drawing.Color.Gray;
             this.txtUserName.Location = new System.Drawing.Point(5, 9);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(225, 24);
+            this.txtUserName.Size = new System.Drawing.Size(225, 22);
             this.txtUserName.TabIndex = 0;
             this.txtUserName.Text = "Username";
             this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
@@ -223,11 +223,11 @@
             // 
             this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.Gray;
             this.txtEmail.Location = new System.Drawing.Point(5, 9);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(225, 24);
+            this.txtEmail.Size = new System.Drawing.Size(225, 22);
             this.txtEmail.TabIndex = 0;
             this.txtEmail.Text = "E-mail";
             this.txtEmail.Enter += new System.EventHandler(this.txtEmail_Enter);
@@ -247,11 +247,11 @@
             // 
             this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
             this.txtPhone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPhone.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.ForeColor = System.Drawing.Color.Gray;
             this.txtPhone.Location = new System.Drawing.Point(5, 9);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(225, 24);
+            this.txtPhone.Size = new System.Drawing.Size(225, 22);
             this.txtPhone.TabIndex = 0;
             this.txtPhone.Text = "Mobile Number";
             this.txtPhone.Enter += new System.EventHandler(this.txtPhone_Enter);
@@ -272,11 +272,11 @@
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Gray;
             this.txtPassword.Location = new System.Drawing.Point(5, 9);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(225, 24);
+            this.txtPassword.Size = new System.Drawing.Size(225, 22);
             this.txtPassword.TabIndex = 0;
             this.txtPassword.Text = "Password";
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
@@ -296,11 +296,11 @@
             // 
             this.txtConPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
             this.txtConPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtConPassword.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConPassword.ForeColor = System.Drawing.Color.Gray;
             this.txtConPassword.Location = new System.Drawing.Point(5, 9);
             this.txtConPassword.Name = "txtConPassword";
-            this.txtConPassword.Size = new System.Drawing.Size(225, 24);
+            this.txtConPassword.Size = new System.Drawing.Size(225, 22);
             this.txtConPassword.TabIndex = 0;
             this.txtConPassword.Text = "Confirm Password";
             this.txtConPassword.Enter += new System.EventHandler(this.txtConPassword_Enter);
@@ -310,7 +310,7 @@
             // 
             this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(134)))), ((int)(((byte)(222)))));
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignUp.Font = new System.Drawing.Font("Cabin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
             this.btnSignUp.Location = new System.Drawing.Point(83, 555);
             this.btnSignUp.Name = "btnSignUp";
@@ -323,11 +323,11 @@
             // checkboxTerms
             // 
             this.checkboxTerms.AutoSize = true;
-            this.checkboxTerms.Font = new System.Drawing.Font("Cabin", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkboxTerms.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkboxTerms.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
             this.checkboxTerms.Location = new System.Drawing.Point(83, 519);
             this.checkboxTerms.Name = "checkboxTerms";
-            this.checkboxTerms.Size = new System.Drawing.Size(178, 20);
+            this.checkboxTerms.Size = new System.Drawing.Size(218, 20);
             this.checkboxTerms.TabIndex = 16;
             this.checkboxTerms.Text = "I agree to the license terms.";
             this.checkboxTerms.UseVisualStyleBackColor = true;
@@ -335,11 +335,11 @@
             // lblHvAcc
             // 
             this.lblHvAcc.AutoSize = true;
-            this.lblHvAcc.Font = new System.Drawing.Font("Cabin", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHvAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHvAcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
             this.lblHvAcc.Location = new System.Drawing.Point(80, 605);
             this.lblHvAcc.Name = "lblHvAcc";
-            this.lblHvAcc.Size = new System.Drawing.Size(152, 16);
+            this.lblHvAcc.Size = new System.Drawing.Size(167, 16);
             this.lblHvAcc.TabIndex = 18;
             this.lblHvAcc.Text = "Already Have an Account?";
             // 
@@ -347,12 +347,12 @@
             // 
             this.linkLogIn.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
             this.linkLogIn.AutoSize = true;
-            this.linkLogIn.Font = new System.Drawing.Font("Cabin", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLogIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLogIn.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkLogIn.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
             this.linkLogIn.Location = new System.Drawing.Point(238, 605);
             this.linkLogIn.Name = "linkLogIn";
-            this.linkLogIn.Size = new System.Drawing.Size(74, 16);
+            this.linkLogIn.Size = new System.Drawing.Size(88, 16);
             this.linkLogIn.TabIndex = 17;
             this.linkLogIn.TabStop = true;
             this.linkLogIn.Text = "Log In Here";
@@ -363,7 +363,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(400, 800);
+            this.ClientSize = new System.Drawing.Size(400, 788);
             this.Controls.Add(this.lblHvAcc);
             this.Controls.Add(this.linkLogIn);
             this.Controls.Add(this.checkboxTerms);
