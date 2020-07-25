@@ -57,7 +57,7 @@
             this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Transparent;
             this.btnClose.Location = new System.Drawing.Point(769, 8);
             this.btnClose.Name = "btnClose";
@@ -101,6 +101,7 @@
             this.pnlAboutBG.Name = "pnlAboutBG";
             this.pnlAboutBG.Size = new System.Drawing.Size(800, 515);
             this.pnlAboutBG.TabIndex = 7;
+            this.pnlAboutBG.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAboutBG_Paint);
             // 
             // btnSNGit
             // 
@@ -112,7 +113,7 @@
             this.btnSNGit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSNGit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSNGit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSNGit.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSNGit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSNGit.ForeColor = System.Drawing.Color.Transparent;
             this.btnSNGit.Location = new System.Drawing.Point(244, 448);
             this.btnSNGit.Name = "btnSNGit";
@@ -131,7 +132,7 @@
             this.btnANLi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnANLi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnANLi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnANLi.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnANLi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnANLi.ForeColor = System.Drawing.Color.Transparent;
             this.btnANLi.Location = new System.Drawing.Point(376, 448);
             this.btnANLi.Name = "btnANLi";
@@ -150,7 +151,7 @@
             this.btnANFB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnANFB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnANFB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnANFB.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnANFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnANFB.ForeColor = System.Drawing.Color.Transparent;
             this.btnANFB.Location = new System.Drawing.Point(350, 448);
             this.btnANFB.Name = "btnANFB";
@@ -169,7 +170,7 @@
             this.btnSNLi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSNLi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSNLi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSNLi.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSNLi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSNLi.ForeColor = System.Drawing.Color.Transparent;
             this.btnSNLi.Location = new System.Drawing.Point(218, 448);
             this.btnSNLi.Name = "btnSNLi";
@@ -188,7 +189,7 @@
             this.btnSNFB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnSNFB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnSNFB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSNFB.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSNFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSNFB.ForeColor = System.Drawing.Color.Transparent;
             this.btnSNFB.Location = new System.Drawing.Point(192, 448);
             this.btnSNFB.Name = "btnSNFB";
@@ -207,7 +208,7 @@
             this.btnNimGit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnNimGit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnNimGit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNimGit.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNimGit.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNimGit.ForeColor = System.Drawing.Color.Transparent;
             this.btnNimGit.Location = new System.Drawing.Point(92, 448);
             this.btnNimGit.Name = "btnNimGit";
@@ -226,7 +227,7 @@
             this.btnNimLi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnNimLi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnNimLi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNimLi.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNimLi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNimLi.ForeColor = System.Drawing.Color.Transparent;
             this.btnNimLi.Location = new System.Drawing.Point(66, 448);
             this.btnNimLi.Name = "btnNimLi";
@@ -245,7 +246,7 @@
             this.btnNimFB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnNimFB.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnNimFB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNimFB.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNimFB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNimFB.ForeColor = System.Drawing.Color.Transparent;
             this.btnNimFB.Location = new System.Drawing.Point(40, 448);
             this.btnNimFB.Name = "btnNimFB";
@@ -259,12 +260,12 @@
             this.linkXd.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
             this.linkXd.AutoSize = true;
             this.linkXd.BackColor = System.Drawing.Color.Transparent;
-            this.linkXd.Font = new System.Drawing.Font("Cabin", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkXd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkXd.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkXd.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
             this.linkXd.Location = new System.Drawing.Point(79, 180);
             this.linkXd.Name = "linkXd";
-            this.linkXd.Size = new System.Drawing.Size(439, 16);
+            this.linkXd.Size = new System.Drawing.Size(451, 16);
             this.linkXd.TabIndex = 21;
             this.linkXd.TabStop = true;
             this.linkXd.Text = "https://xd.adobe.com/view/a46da8e8-5bd0-4e33-ab66-9976aaae1a55-f13e";
@@ -275,12 +276,12 @@
             this.linkGithub.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
             this.linkGithub.AutoSize = true;
             this.linkGithub.BackColor = System.Drawing.Color.Transparent;
-            this.linkGithub.Font = new System.Drawing.Font("Cabin", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkGithub.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkGithub.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkGithub.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
-            this.linkGithub.Location = new System.Drawing.Point(79, 131);
+            this.linkGithub.Location = new System.Drawing.Point(79, 130);
             this.linkGithub.Name = "linkGithub";
-            this.linkGithub.Size = new System.Drawing.Size(335, 16);
+            this.linkGithub.Size = new System.Drawing.Size(349, 16);
             this.linkGithub.TabIndex = 20;
             this.linkGithub.TabStop = true;
             this.linkGithub.Text = "https://github.com/nimeshkavinda/CRUD-Operations-App";

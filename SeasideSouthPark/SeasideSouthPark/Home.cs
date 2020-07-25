@@ -136,12 +136,7 @@ namespace SeasideSouthPark
         }
 
         private void pnlBook_Paint(object sender, PaintEventArgs e)
-        {
-            //pictureBox1.Visible = false;
-           // pictureBox2.Visible = false;
-            //pictureBox3.Visible = false;
-            //pictureBox4.Visible = false;
-
+        {   
             if (adults == 1 && children == 0)
             {
                 pictureBox1.Visible = true;
@@ -180,7 +175,7 @@ namespace SeasideSouthPark
             }
             else
             {
-                //MessageBox.Show("Please Check your Info."); 
+
             }
         }
 
@@ -279,22 +274,74 @@ namespace SeasideSouthPark
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='" + adults + "',Children='" + children + "',Username='" + usrname + "' WHERE Roomid='" +6+ "'";
+            SqlCommand cmd = new SqlCommand(qry, con);
 
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Booked");
+            }
+            catch
+            {
+
+            }
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='" + adults + "',Children='" + children + "',Username='" + usrname + "' WHERE Roomid='" + 5 + "'";
+            SqlCommand cmd = new SqlCommand(qry, con);
 
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Booked");
+            }
+            catch
+            {
+
+            }
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='" + adults + "',Children='" + children + "',Username='" + usrname + "' WHERE Roomid='" + 3+"'";
+            SqlCommand cmd = new SqlCommand(qry, con);
 
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Booked");
+            }
+            catch
+            {
+
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='" + adults + "',Children='" + children + "',Username='" + usrname + "' WHERE Roomid='" + 4+"'";
+            SqlCommand cmd = new SqlCommand(qry, con);
 
+            try
+            {
+                con.Open();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Booked");
+            }
+            catch
+            {
+
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
