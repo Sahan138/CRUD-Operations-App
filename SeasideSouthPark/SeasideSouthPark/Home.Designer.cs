@@ -30,47 +30,69 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formHome));
-            this.btnClose = new System.Windows.Forms.Button();
             this.ctrlBar = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.dragCtrlBar = new JDragControl.JDragControl(this.components);
             this.pnlSideMenu = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkManageAcc = new System.Windows.Forms.LinkLabel();
-            this.linkSignOut = new System.Windows.Forms.LinkLabel();
+            this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnContact = new System.Windows.Forms.Button();
+            this.btnMngAcc = new System.Windows.Forms.Button();
+            this.btnAbout = new System.Windows.Forms.Button();
+            this.btnSignOut = new System.Windows.Forms.Button();
             this.pnlHello = new System.Windows.Forms.Panel();
             this.picboxUser = new System.Windows.Forms.PictureBox();
             this.lblUser = new System.Windows.Forms.Label();
             this.pnlWelcome = new System.Windows.Forms.Panel();
-            this.txtRoom = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtChildren = new System.Windows.Forms.TextBox();
-            this.txtAdults = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pnlBook = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlContact = new System.Windows.Forms.Panel();
+            this.btnMap = new System.Windows.Forms.Button();
+            this.txtMap = new System.Windows.Forms.TextBox();
+            this.pnlWeb = new System.Windows.Forms.Panel();
+            this.webMap = new System.Windows.Forms.WebBrowser();
+            this.linkAnu = new System.Windows.Forms.LinkLabel();
+            this.linkSahan = new System.Windows.Forms.LinkLabel();
+            this.linkNimesh = new System.Windows.Forms.LinkLabel();
+            this.linkFeedback = new System.Windows.Forms.LinkLabel();
             this.ctrlBar.SuspendLayout();
             this.pnlSideMenu.SuspendLayout();
+            this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).BeginInit();
-            this.pnlWelcome.SuspendLayout();
-            this.pnlBook.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pnlContact.SuspendLayout();
+            this.pnlWeb.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // ctrlBar
+            // 
+            this.ctrlBar.Controls.Add(this.btnMinimize);
+            this.ctrlBar.Controls.Add(this.btnClose);
+            this.ctrlBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ctrlBar.Location = new System.Drawing.Point(0, 0);
+            this.ctrlBar.Margin = new System.Windows.Forms.Padding(4);
+            this.ctrlBar.Name = "ctrlBar";
+            this.ctrlBar.Size = new System.Drawing.Size(1573, 43);
+            this.ctrlBar.TabIndex = 5;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
+            this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinimize.ForeColor = System.Drawing.Color.Transparent;
+            this.btnMinimize.Location = new System.Drawing.Point(1503, 10);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(27, 25);
+            this.btnMinimize.TabIndex = 4;
+            this.btnMinimize.UseVisualStyleBackColor = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            this.btnMinimize.MouseEnter += new System.EventHandler(this.btnMinimize_MouseEnter);
+            this.btnMinimize.MouseLeave += new System.EventHandler(this.btnMinimize_MouseLeave);
             // 
             // btnClose
             // 
@@ -81,26 +103,17 @@
             this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Transparent;
-            this.btnClose.Location = new System.Drawing.Point(1153, 8);
+            this.btnClose.Location = new System.Drawing.Point(1537, 10);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 20);
+            this.btnClose.Size = new System.Drawing.Size(27, 25);
             this.btnClose.TabIndex = 3;
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             this.btnClose.MouseEnter += new System.EventHandler(this.btnClose_MouseEnter);
             this.btnClose.MouseLeave += new System.EventHandler(this.btnClose_MouseLeave);
-            // 
-            // ctrlBar
-            // 
-            this.ctrlBar.Controls.Add(this.btnClose);
-            this.ctrlBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ctrlBar.Location = new System.Drawing.Point(0, 0);
-            this.ctrlBar.Name = "ctrlBar";
-            this.ctrlBar.Size = new System.Drawing.Size(1180, 35);
-            this.ctrlBar.TabIndex = 5;
-            this.ctrlBar.Paint += new System.Windows.Forms.PaintEventHandler(this.ctrlBar_Paint);
             // 
             // dragCtrlBar
             // 
@@ -110,336 +123,335 @@
             // pnlSideMenu
             // 
             this.pnlSideMenu.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlSideMenu.Controls.Add(this.linkLabel1);
-            this.pnlSideMenu.Controls.Add(this.linkManageAcc);
-            this.pnlSideMenu.Controls.Add(this.linkSignOut);
+            this.pnlSideMenu.Controls.Add(this.pnlMenu);
             this.pnlSideMenu.Controls.Add(this.pnlHello);
             this.pnlSideMenu.Controls.Add(this.picboxUser);
             this.pnlSideMenu.Controls.Add(this.lblUser);
             this.pnlSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnlSideMenu.Location = new System.Drawing.Point(0, 35);
+            this.pnlSideMenu.Location = new System.Drawing.Point(0, 43);
+            this.pnlSideMenu.Margin = new System.Windows.Forms.Padding(4);
             this.pnlSideMenu.Name = "pnlSideMenu";
-            this.pnlSideMenu.Size = new System.Drawing.Size(250, 625);
+            this.pnlSideMenu.Size = new System.Drawing.Size(333, 769);
             this.pnlSideMenu.TabIndex = 6;
-            this.pnlSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlSideMenu_Paint);
             // 
-            // linkLabel1
+            // pnlMenu
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
-            this.linkLabel1.Location = new System.Drawing.Point(22, 171);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(43, 16);
-            this.linkLabel1.TabIndex = 20;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "About";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.pnlMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenu.BackgroundImage")));
+            this.pnlMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlMenu.Controls.Add(this.btnSearch);
+            this.pnlMenu.Controls.Add(this.btnContact);
+            this.pnlMenu.Controls.Add(this.btnMngAcc);
+            this.pnlMenu.Controls.Add(this.btnAbout);
+            this.pnlMenu.Controls.Add(this.btnSignOut);
+            this.pnlMenu.Location = new System.Drawing.Point(0, 135);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(333, 431);
+            this.pnlMenu.TabIndex = 10;
             // 
-            // linkManageAcc
+            // btnSearch
             // 
-            this.linkManageAcc.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
-            this.linkManageAcc.AutoSize = true;
-            this.linkManageAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkManageAcc.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkManageAcc.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
-            this.linkManageAcc.Location = new System.Drawing.Point(22, 110);
-            this.linkManageAcc.Name = "linkManageAcc";
-            this.linkManageAcc.Size = new System.Drawing.Size(109, 16);
-            this.linkManageAcc.TabIndex = 19;
-            this.linkManageAcc.TabStop = true;
-            this.linkManageAcc.Text = "Manage Account";
-            this.linkManageAcc.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkManageAcc_LinkClicked);
+            this.btnSearch.BackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Cabin", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
+            this.btnSearch.Location = new System.Drawing.Point(0, 1);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(333, 84);
+            this.btnSearch.TabIndex = 26;
+            this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            this.btnSearch.MouseEnter += new System.EventHandler(this.btnSearch_MouseEnter);
+            this.btnSearch.MouseLeave += new System.EventHandler(this.btnSearch_MouseLeave);
             // 
-            // linkSignOut
+            // btnContact
             // 
-            this.linkSignOut.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
-            this.linkSignOut.AutoSize = true;
-            this.linkSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkSignOut.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkSignOut.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
-            this.linkSignOut.Location = new System.Drawing.Point(22, 130);
-            this.linkSignOut.Name = "linkSignOut";
-            this.linkSignOut.Size = new System.Drawing.Size(58, 16);
-            this.linkSignOut.TabIndex = 18;
-            this.linkSignOut.TabStop = true;
-            this.linkSignOut.Text = "Sign Out";
-            this.linkSignOut.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkSignOut_LinkClicked);
+            this.btnContact.BackColor = System.Drawing.Color.Transparent;
+            this.btnContact.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnContact.BackgroundImage")));
+            this.btnContact.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnContact.FlatAppearance.BorderSize = 0;
+            this.btnContact.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnContact.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnContact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContact.Font = new System.Drawing.Font("Cabin", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
+            this.btnContact.Location = new System.Drawing.Point(0, 87);
+            this.btnContact.Margin = new System.Windows.Forms.Padding(4);
+            this.btnContact.Name = "btnContact";
+            this.btnContact.Size = new System.Drawing.Size(333, 84);
+            this.btnContact.TabIndex = 25;
+            this.btnContact.UseVisualStyleBackColor = false;
+            this.btnContact.Click += new System.EventHandler(this.btnContact_Click);
+            this.btnContact.MouseEnter += new System.EventHandler(this.btnContact_MouseEnter);
+            this.btnContact.MouseLeave += new System.EventHandler(this.btnContact_MouseLeave);
+            // 
+            // btnMngAcc
+            // 
+            this.btnMngAcc.BackColor = System.Drawing.Color.Transparent;
+            this.btnMngAcc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMngAcc.BackgroundImage")));
+            this.btnMngAcc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnMngAcc.FlatAppearance.BorderSize = 0;
+            this.btnMngAcc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnMngAcc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnMngAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMngAcc.Font = new System.Drawing.Font("Cabin", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMngAcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
+            this.btnMngAcc.Location = new System.Drawing.Point(0, 261);
+            this.btnMngAcc.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMngAcc.Name = "btnMngAcc";
+            this.btnMngAcc.Size = new System.Drawing.Size(333, 84);
+            this.btnMngAcc.TabIndex = 24;
+            this.btnMngAcc.UseVisualStyleBackColor = false;
+            this.btnMngAcc.Click += new System.EventHandler(this.btnMngAcc_Click);
+            this.btnMngAcc.MouseEnter += new System.EventHandler(this.btnMngAcc_MouseEnter);
+            this.btnMngAcc.MouseLeave += new System.EventHandler(this.btnMngAcc_MouseLeave);
+            // 
+            // btnAbout
+            // 
+            this.btnAbout.BackColor = System.Drawing.Color.Transparent;
+            this.btnAbout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAbout.BackgroundImage")));
+            this.btnAbout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAbout.FlatAppearance.BorderSize = 0;
+            this.btnAbout.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnAbout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbout.Font = new System.Drawing.Font("Cabin", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
+            this.btnAbout.Location = new System.Drawing.Point(0, 174);
+            this.btnAbout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAbout.Name = "btnAbout";
+            this.btnAbout.Size = new System.Drawing.Size(333, 84);
+            this.btnAbout.TabIndex = 23;
+            this.btnAbout.UseVisualStyleBackColor = false;
+            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            this.btnAbout.MouseEnter += new System.EventHandler(this.btnAbout_MouseEnter);
+            this.btnAbout.MouseLeave += new System.EventHandler(this.btnAbout_MouseLeave);
+            // 
+            // btnSignOut
+            // 
+            this.btnSignOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSignOut.BackgroundImage")));
+            this.btnSignOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnSignOut.FlatAppearance.BorderSize = 0;
+            this.btnSignOut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnSignOut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignOut.Font = new System.Drawing.Font("Cabin", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
+            this.btnSignOut.Location = new System.Drawing.Point(0, 347);
+            this.btnSignOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(333, 84);
+            this.btnSignOut.TabIndex = 22;
+            this.btnSignOut.UseVisualStyleBackColor = false;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
+            this.btnSignOut.MouseEnter += new System.EventHandler(this.btnSignOut_MouseEnter);
+            this.btnSignOut.MouseLeave += new System.EventHandler(this.btnSignOut_MouseLeave);
             // 
             // pnlHello
             // 
             this.pnlHello.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlHello.BackgroundImage")));
             this.pnlHello.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnlHello.Location = new System.Drawing.Point(100, 32);
+            this.pnlHello.Location = new System.Drawing.Point(133, 39);
+            this.pnlHello.Margin = new System.Windows.Forms.Padding(4);
             this.pnlHello.Name = "pnlHello";
-            this.pnlHello.Size = new System.Drawing.Size(66, 26);
+            this.pnlHello.Size = new System.Drawing.Size(88, 32);
             this.pnlHello.TabIndex = 9;
-            this.pnlHello.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlHello_Paint);
             // 
             // picboxUser
             // 
             this.picboxUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picboxUser.BackgroundImage")));
             this.picboxUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.picboxUser.Location = new System.Drawing.Point(25, 25);
+            this.picboxUser.Location = new System.Drawing.Point(33, 31);
+            this.picboxUser.Margin = new System.Windows.Forms.Padding(4);
             this.picboxUser.Name = "picboxUser";
-            this.picboxUser.Size = new System.Drawing.Size(65, 65);
+            this.picboxUser.Size = new System.Drawing.Size(87, 80);
             this.picboxUser.TabIndex = 8;
             this.picboxUser.TabStop = false;
-            this.picboxUser.Click += new System.EventHandler(this.picboxUser_Click);
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUser.Font = new System.Drawing.Font("Cabin", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
-            this.lblUser.Location = new System.Drawing.Point(95, 62);
+            this.lblUser.Location = new System.Drawing.Point(125, 76);
+            this.lblUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(105, 24);
+            this.lblUser.Size = new System.Drawing.Size(152, 43);
             this.lblUser.TabIndex = 7;
             this.lblUser.Text = "Username";
-            this.lblUser.Click += new System.EventHandler(this.lblUser_Click);
             // 
             // pnlWelcome
             // 
             this.pnlWelcome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlWelcome.BackgroundImage")));
             this.pnlWelcome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pnlWelcome.Controls.Add(this.txtRoom);
-            this.pnlWelcome.Controls.Add(this.label5);
-            this.pnlWelcome.Controls.Add(this.label4);
-            this.pnlWelcome.Controls.Add(this.label3);
-            this.pnlWelcome.Controls.Add(this.txtChildren);
-            this.pnlWelcome.Controls.Add(this.txtAdults);
-            this.pnlWelcome.Controls.Add(this.label1);
-            this.pnlWelcome.Controls.Add(this.label2);
-            this.pnlWelcome.Controls.Add(this.dateTimePicker2);
-            this.pnlWelcome.Controls.Add(this.dateTimePicker1);
-            this.pnlWelcome.Controls.Add(this.button1);
             this.pnlWelcome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlWelcome.Location = new System.Drawing.Point(250, 35);
+            this.pnlWelcome.Location = new System.Drawing.Point(333, 43);
+            this.pnlWelcome.Margin = new System.Windows.Forms.Padding(4);
             this.pnlWelcome.Name = "pnlWelcome";
-            this.pnlWelcome.Size = new System.Drawing.Size(930, 625);
+            this.pnlWelcome.Size = new System.Drawing.Size(1240, 769);
             this.pnlWelcome.TabIndex = 7;
-            this.pnlWelcome.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlWelcome_Paint);
             // 
-            // txtRoom
+            // pnlContact
             // 
-            this.txtRoom.Location = new System.Drawing.Point(348, 399);
-            this.txtRoom.Name = "txtRoom";
-            this.txtRoom.Size = new System.Drawing.Size(32, 20);
-            this.txtRoom.TabIndex = 23;
-            this.txtRoom.TextChanged += new System.EventHandler(this.txtRoom_TextChanged);
+            this.pnlContact.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlContact.BackgroundImage")));
+            this.pnlContact.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlContact.Controls.Add(this.btnMap);
+            this.pnlContact.Controls.Add(this.txtMap);
+            this.pnlContact.Controls.Add(this.pnlWeb);
+            this.pnlContact.Controls.Add(this.linkAnu);
+            this.pnlContact.Controls.Add(this.linkSahan);
+            this.pnlContact.Controls.Add(this.linkNimesh);
+            this.pnlContact.Controls.Add(this.linkFeedback);
+            this.pnlContact.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlContact.Location = new System.Drawing.Point(333, 43);
+            this.pnlContact.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlContact.Name = "pnlContact";
+            this.pnlContact.Size = new System.Drawing.Size(1240, 769);
+            this.pnlContact.TabIndex = 0;
             // 
-            // label5
+            // btnMap
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(165, 400);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(146, 16);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Number Of Rooms : ";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.btnMap.Location = new System.Drawing.Point(272, 720);
+            this.btnMap.Name = "btnMap";
+            this.btnMap.Size = new System.Drawing.Size(79, 23);
+            this.btnMap.TabIndex = 27;
+            this.btnMap.Text = "View Us ";
+            this.btnMap.UseVisualStyleBackColor = true;
+            this.btnMap.Click += new System.EventHandler(this.btnMap_Click);
             // 
-            // label4
+            // txtMap
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(161, 355);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(150, 16);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Number Of Children :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.txtMap.BackColor = System.Drawing.Color.White;
+            this.txtMap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMap.Font = new System.Drawing.Font("Cabin Medium", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMap.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtMap.Location = new System.Drawing.Point(121, 720);
+            this.txtMap.Name = "txtMap";
+            this.txtMap.Size = new System.Drawing.Size(100, 21);
+            this.txtMap.TabIndex = 26;
+            this.txtMap.Text = "NSBM";
+            this.txtMap.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label3
+            // pnlWeb
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(161, 323);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 16);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Number Of Adults    :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.pnlWeb.Controls.Add(this.webMap);
+            this.pnlWeb.Location = new System.Drawing.Point(87, 406);
+            this.pnlWeb.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlWeb.Name = "pnlWeb";
+            this.pnlWeb.Size = new System.Drawing.Size(551, 283);
+            this.pnlWeb.TabIndex = 25;
             // 
-            // txtChildren
+            // webMap
             // 
-            this.txtChildren.Location = new System.Drawing.Point(348, 355);
-            this.txtChildren.Name = "txtChildren";
-            this.txtChildren.Size = new System.Drawing.Size(32, 20);
-            this.txtChildren.TabIndex = 19;
-            this.txtChildren.TextChanged += new System.EventHandler(this.txtChildren_TextChanged);
+            this.webMap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webMap.Location = new System.Drawing.Point(0, 0);
+            this.webMap.Margin = new System.Windows.Forms.Padding(4);
+            this.webMap.MinimumSize = new System.Drawing.Size(27, 25);
+            this.webMap.Name = "webMap";
+            this.webMap.ScrollBarsEnabled = false;
+            this.webMap.Size = new System.Drawing.Size(551, 283);
+            this.webMap.TabIndex = 0;
+            this.webMap.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webMap_DocumentCompleted);
             // 
-            // txtAdults
+            // linkAnu
             // 
-            this.txtAdults.Location = new System.Drawing.Point(348, 319);
-            this.txtAdults.Name = "txtAdults";
-            this.txtAdults.Size = new System.Drawing.Size(32, 20);
-            this.txtAdults.TabIndex = 18;
-            this.txtAdults.TextChanged += new System.EventHandler(this.txtAdults_TextChanged);
+            this.linkAnu.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
+            this.linkAnu.AutoSize = true;
+            this.linkAnu.BackColor = System.Drawing.Color.Transparent;
+            this.linkAnu.Font = new System.Drawing.Font("Cabin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkAnu.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkAnu.LinkColor = System.Drawing.Color.Black;
+            this.linkAnu.Location = new System.Drawing.Point(565, 223);
+            this.linkAnu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkAnu.Name = "linkAnu";
+            this.linkAnu.Size = new System.Drawing.Size(315, 29);
+            this.linkAnu.TabIndex = 24;
+            this.linkAnu.TabStop = true;
+            this.linkAnu.Text = "anvidanagamage@students.nsbm.lk";
+            this.linkAnu.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkAnu_LinkClicked);
             // 
-            // label1
+            // linkSahan
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(161, 246);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 16);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Check In Date          :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.linkSahan.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
+            this.linkSahan.AutoSize = true;
+            this.linkSahan.BackColor = System.Drawing.Color.Transparent;
+            this.linkSahan.Font = new System.Drawing.Font("Cabin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkSahan.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkSahan.LinkColor = System.Drawing.Color.Black;
+            this.linkSahan.Location = new System.Drawing.Point(565, 197);
+            this.linkSahan.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkSahan.Name = "linkSahan";
+            this.linkSahan.Size = new System.Drawing.Size(290, 29);
+            this.linkSahan.TabIndex = 23;
+            this.linkSahan.TabStop = true;
+            this.linkSahan.Text = "ntspnishantha@students.nsbm.lk";
+            this.linkSahan.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkSahan_LinkClicked);
             // 
-            // label2
+            // linkNimesh
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(161, 279);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 16);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Check Out Date       :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.linkNimesh.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
+            this.linkNimesh.AutoSize = true;
+            this.linkNimesh.BackColor = System.Drawing.Color.Transparent;
+            this.linkNimesh.Font = new System.Drawing.Font("Cabin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkNimesh.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkNimesh.LinkColor = System.Drawing.Color.Black;
+            this.linkNimesh.Location = new System.Drawing.Point(565, 171);
+            this.linkNimesh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkNimesh.Name = "linkNimesh";
+            this.linkNimesh.Size = new System.Drawing.Size(276, 29);
+            this.linkNimesh.TabIndex = 22;
+            this.linkNimesh.TabStop = true;
+            this.linkNimesh.Text = "ukdnkavinda@students.nsbm.lk";
+            this.linkNimesh.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkNimesh_LinkClicked);
             // 
-            // dateTimePicker2
+            // linkFeedback
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(348, 279);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 8;
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(348, 244);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 7;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(348, 438);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 20);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Search";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pnlBook
-            // 
-            this.pnlBook.Controls.Add(this.pictureBox6);
-            this.pnlBook.Controls.Add(this.pictureBox5);
-            this.pnlBook.Controls.Add(this.pictureBox3);
-            this.pnlBook.Controls.Add(this.pictureBox4);
-            this.pnlBook.Controls.Add(this.pictureBox2);
-            this.pnlBook.Controls.Add(this.pictureBox1);
-            this.pnlBook.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlBook.Location = new System.Drawing.Point(250, 35);
-            this.pnlBook.Name = "pnlBook";
-            this.pnlBook.Size = new System.Drawing.Size(930, 625);
-            this.pnlBook.TabIndex = 11;
-            this.pnlBook.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBook_Paint);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(213, 14);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(180, 173);
-            this.pictureBox6.TabIndex = 5;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(15, 14);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(180, 173);
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(15, 14);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(180, 173);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(213, 14);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(180, 173);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(213, 14);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(180, 173);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(180, 173);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.linkFeedback.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
+            this.linkFeedback.AutoSize = true;
+            this.linkFeedback.BackColor = System.Drawing.Color.Transparent;
+            this.linkFeedback.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkFeedback.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkFeedback.LinkColor = System.Drawing.Color.Black;
+            this.linkFeedback.Location = new System.Drawing.Point(81, 321);
+            this.linkFeedback.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.linkFeedback.Name = "linkFeedback";
+            this.linkFeedback.Size = new System.Drawing.Size(313, 35);
+            this.linkFeedback.TabIndex = 21;
+            this.linkFeedback.TabStop = true;
+            this.linkFeedback.Text = "seasidesouthpark@gmail.com";
+            this.linkFeedback.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkFeedback_LinkClicked);
             // 
             // formHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1180, 660);
+            this.ClientSize = new System.Drawing.Size(1573, 812);
+            this.Controls.Add(this.pnlContact);
             this.Controls.Add(this.pnlWelcome);
-            this.Controls.Add(this.pnlBook);
             this.Controls.Add(this.pnlSideMenu);
             this.Controls.Add(this.ctrlBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seaside South Park";
+            this.Load += new System.EventHandler(this.formHome_Load);
             this.ctrlBar.ResumeLayout(false);
             this.pnlSideMenu.ResumeLayout(false);
             this.pnlSideMenu.PerformLayout();
+            this.pnlMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picboxUser)).EndInit();
-            this.pnlWelcome.ResumeLayout(false);
-            this.pnlWelcome.PerformLayout();
-            this.pnlBook.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pnlContact.ResumeLayout(false);
+            this.pnlContact.PerformLayout();
+            this.pnlWeb.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -454,26 +466,21 @@
         private System.Windows.Forms.Panel pnlWelcome;
         private System.Windows.Forms.Panel pnlHello;
         private System.Windows.Forms.PictureBox picboxUser;
-        private System.Windows.Forms.LinkLabel linkSignOut;
-        private System.Windows.Forms.LinkLabel linkManageAcc;
-        private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel pnlBook;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtChildren;
-        private System.Windows.Forms.TextBox txtAdults;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtRoom;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Panel pnlContact;
+        private System.Windows.Forms.LinkLabel linkFeedback;
+        private System.Windows.Forms.LinkLabel linkNimesh;
+        private System.Windows.Forms.LinkLabel linkAnu;
+        private System.Windows.Forms.LinkLabel linkSahan;
+        private System.Windows.Forms.Panel pnlWeb;
+        private System.Windows.Forms.WebBrowser webMap;
+        private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.Panel pnlMenu;
+        private System.Windows.Forms.Button btnSignOut;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnContact;
+        private System.Windows.Forms.Button btnMngAcc;
+        private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.TextBox txtMap;
+        private System.Windows.Forms.Button btnMap;
     }
 }

@@ -58,6 +58,7 @@ namespace SeasideSouthPark
                 txtPassword.Text = "";
                 txtPassword.PasswordChar = '*';
                 txtPassword.ForeColor = Color.DimGray;
+                
             }
         }
 
@@ -65,9 +66,11 @@ namespace SeasideSouthPark
         {
             if (txtPassword.Text.Length < 1)
             {
+                txtPassword.PasswordChar = '\0';
                 txtPassword.Text = "Password";
                 txtPassword.ForeColor = Color.Gray;
             }
+            
         }
 
         private void linkSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -79,7 +82,7 @@ namespace SeasideSouthPark
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Ebay\CRUD-Operations-App-master\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\CRUD-Operations-App-master\CRUD-Operations-App-master\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
             string qry = "Select * from tblUser where Username='" + txtUserName.Text.Trim() + "' and Password='" + txtPassword.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(qry, con);
             DataTable dtbl = new DataTable();

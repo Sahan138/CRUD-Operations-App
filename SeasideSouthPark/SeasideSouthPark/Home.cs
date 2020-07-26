@@ -7,28 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace SeasideSouthPark
 {
     public partial class formHome : Form
     {
-        string usrname,chkin,chkout;
-        int rooms;
-        int adults;
-        int children;
-
+        
         public void hidePanels()
         {
             pnlWelcome.Visible = false;
-            pnlBook.Visible = false;
+            pnlContact.Visible = false;
         }
 
         public formHome(string username)
         {
             InitializeComponent();
             lblUser.Text = username;
-            usrname = username;
         }
 
         private void formHome_Load(object sender, EventArgs e)
@@ -52,6 +46,103 @@ namespace SeasideSouthPark
             btnClose.Size = new Size(20, 20);
         }
 
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnMinimize_MouseEnter(object sender, EventArgs e)
+        {
+            btnMinimize.Size = new Size(21, 21);
+        }
+
+        private void btnMinimize_MouseLeave(object sender, EventArgs e)
+        {
+            btnMinimize.Size = new Size(20, 20);
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            hidePanels();
+            pnlWelcome.Visible = true;
+        }
+
+        private void btnSearch_MouseEnter(object sender, EventArgs e)
+        {
+            btnSearch.BackgroundImage = SeasideSouthPark.Properties.Resources.btnsearchhover;
+        }
+
+        private void btnSearch_MouseLeave(object sender, EventArgs e)
+        {
+            btnSearch.BackgroundImage = SeasideSouthPark.Properties.Resources.btnsearch;
+        }
+
+        private void btnContact_Click(object sender, EventArgs e)
+        {
+            hidePanels();
+            pnlContact.Visible = true;
+        }
+
+        private void btnContact_MouseEnter(object sender, EventArgs e)
+        {
+            btnContact.BackgroundImage = SeasideSouthPark.Properties.Resources.btncontacthover;
+        }
+
+        private void btnContact_MouseLeave(object sender, EventArgs e)
+        {
+            btnContact.BackgroundImage = SeasideSouthPark.Properties.Resources.btncontact;
+        }
+
+        private void btnAbout_Click(object sender, EventArgs e)
+        {
+            formAbout frmAbout = formAbout.getInstance();
+            frmAbout.Show();
+        }
+
+        private void btnAbout_MouseEnter(object sender, EventArgs e)
+        {
+            btnAbout.BackgroundImage = SeasideSouthPark.Properties.Resources.btnabouthover;
+        }
+
+        private void btnAbout_MouseLeave(object sender, EventArgs e)
+        {
+            btnAbout.BackgroundImage = SeasideSouthPark.Properties.Resources.btnabout;
+        }
+
+        private void btnMngAcc_Click(object sender, EventArgs e)
+        {
+            formAccount frmAccount = new formAccount(lblUser.Text);
+            frmAccount.Show();
+            this.Hide();
+        }
+
+        private void btnMngAcc_MouseEnter(object sender, EventArgs e)
+        {
+            btnMngAcc.BackgroundImage = SeasideSouthPark.Properties.Resources.btnmngacchover;
+        }
+
+        private void btnMngAcc_MouseLeave(object sender, EventArgs e)
+        {
+            btnMngAcc.BackgroundImage = SeasideSouthPark.Properties.Resources.btnmngacc;
+        }
+
+        private void btnSignOut_MouseEnter(object sender, EventArgs e)
+        {
+            btnSignOut.BackgroundImage = SeasideSouthPark.Properties.Resources.btnsignouthover;
+        }
+
+        private void btnSignOut_MouseLeave(object sender, EventArgs e)
+        {
+            btnSignOut.BackgroundImage = SeasideSouthPark.Properties.Resources.btnsignout;
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            formLogin frmLogin = new formLogin();
+            frmLogin.Show();
+            this.Hide();
+        }
+
         private void linkSignOut_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             formLogin frmLogin = new formLogin();
@@ -66,305 +157,47 @@ namespace SeasideSouthPark
             this.Hide();
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void linkNimesh_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            formAbout frmAbout = new formAbout();
-            frmAbout.Show();
+            System.Diagnostics.Process.Start("mailto:linkNimesh.Text");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void linkSahan_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            chkin = dateTimePicker1.Value.ToString("yyyy/MM/dd");
-            chkout = dateTimePicker2.Value.ToString("yyyy/MM/dd");
-                         
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
-            string qry = "SELECT * FROM tblRooms WHERE Checkin='" +chkin+ "'and Checkout='" + chkout + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(qry, con);
-            DataTable ds = new DataTable();
-            sda.Fill(ds);
-           
-            try
+            System.Diagnostics.Process.Start("mailto:linkSahan.Text");
+        }
+
+        private void linkAnu_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("mailto:linkAnu.Text");
+        }
+
+        private void linkFeedback_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("mailto:linkFeedback.Text");
+        }
+
+        private void webMap_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            InitializeComponent();
+         
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMap_Click(object sender, EventArgs e)
+        {
+            string nsbm = txtMap.Text;
+            StringBuilder location = new StringBuilder("https://www.google.com/maps/place/NSBM+Green+University/@6.8207861,80.037694,17z/data=!4m8!1m2!2m1!1snsbm!3m4!1s0x3ae25a48d2a0302d:0xddb466719c0595db!8m2!3d6.8211381!4d80.0408951");
+            if (nsbm != " ")
             {
-                if (ds.Rows.Count == 1)
-               
-                {
-                    if (txtAdults.Text == "" || txtChildren.Text == "" || txtRoom.Text=="")
-                    {
-                        MessageBox.Show("Please Fill All Fields.");
-                    }
-                    else 
-                    {
-                        MessageBox.Show("Sorry we are not Available");
-                    }
-                }
-                
-                else
-
-                {
-                    if (txtAdults.Text == "" || txtChildren.Text == "" || txtRoom.Text == "")
-                    {
-                        MessageBox.Show("Please Enter Required Fields.");
-                    }
-                    else
-                    {
-                        hidePanels();
-                        pnlBook.Visible = true;
-                        adults = Int32.Parse(txtAdults.Text);
-                        children = Int32.Parse(txtChildren.Text);
-                        rooms = Int32.Parse(txtRoom.Text);
-                    }
-                }
+                location.Append(nsbm + "," + "+");
             }
-            catch
-            {
-               
-            }
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private void pnlWelcome_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void book_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlBook_Paint(object sender, PaintEventArgs e)
-        {   
-            if (adults == 1 && children == 0)
-            {
-                pictureBox1.Visible = true;
-                pictureBox2.Visible = true;
-                pictureBox3.Visible = false;
-                pictureBox4.Visible = false;
-                pictureBox5.Visible = false;
-                pictureBox6.Visible = false;
-            }
-            else if (adults == 2 && children == 0)
-            {
-                pictureBox1.Visible = false;
-                pictureBox2.Visible = false;
-                pictureBox3.Visible = true;
-                pictureBox4.Visible = true;
-                pictureBox5.Visible = false;
-                pictureBox6.Visible = false;
-            }
-            else if (adults == 1 && children == 1)
-            {
-                pictureBox1.Visible = false;
-                pictureBox2.Visible = false;
-                pictureBox3.Visible = true;
-                pictureBox4.Visible = true;
-                pictureBox5.Visible = false;
-                pictureBox6.Visible = false;
-            }
-            else if (adults >=2 || children >=1)
-            {
-                pictureBox1.Visible = false;
-                pictureBox2.Visible = false;
-                pictureBox3.Visible = false;
-                pictureBox4.Visible = false;
-                pictureBox5.Visible = true;
-                pictureBox6.Visible = true;
-            }
-            else
-            {
-
-            }
-        }
-
-        private void ctrlBar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnlSideMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnlHello_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void picboxUser_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblUser_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
-            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='" + adults + "',Children='" + children + "',Username='" + usrname + "' WHERE Roomid='" + 2 + "'";
-            SqlCommand cmd = new SqlCommand(qry, con);
-
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Booked");
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void txtRoom_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtChildren_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAdults_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
-            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='" + adults + "',Children='" + children + "',Username='" + usrname + "' WHERE Roomid='" +6+ "'";
-            SqlCommand cmd = new SqlCommand(qry, con);
-
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Booked");
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
-            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='" + adults + "',Children='" + children + "',Username='" + usrname + "' WHERE Roomid='" + 5 + "'";
-            SqlCommand cmd = new SqlCommand(qry, con);
-
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Booked");
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
-            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='" + adults + "',Children='" + children + "',Username='" + usrname + "' WHERE Roomid='" + 3+"'";
-            SqlCommand cmd = new SqlCommand(qry, con);
-
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Booked");
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
-            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='" + adults + "',Children='" + children + "',Username='" + usrname + "' WHERE Roomid='" + 4+"'";
-            SqlCommand cmd = new SqlCommand(qry, con);
-
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Booked");
-            }
-            catch
-            {
-
-            }
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ASUS\Downloads\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
-            string qry = "UPDATE tblRooms SET Checkin='" + chkin + "',Checkout='" + chkout + "',Adults='"+adults+"',Children='"+children+"',Username='"+usrname+"' WHERE Roomid='"+1+"'";
-            SqlCommand cmd = new SqlCommand(qry, con);
-
-            try
-            {
-                con.Open();
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Booked");
-            }
-            catch
-            {
-
-            }
+            webMap.Navigate("https://www.google.com/maps/place/NSBM+Green+University/@6.8207861,80.037694,17z/data=!4m8!1m2!2m1!1snsbm!3m4!1s0x3ae25a48d2a0302d:0xddb466719c0595db!8m2!3d6.8211381!4d80.0408951");
         }
     }
 }

@@ -66,7 +66,7 @@
             this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Transparent;
             this.btnClose.Location = new System.Drawing.Point(769, 8);
             this.btnClose.Name = "btnClose";
@@ -105,11 +105,11 @@
             // 
             this.txtUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
             this.txtUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserName.ForeColor = System.Drawing.Color.Gray;
             this.txtUserName.Location = new System.Drawing.Point(5, 9);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(225, 22);
+            this.txtUserName.Size = new System.Drawing.Size(225, 24);
             this.txtUserName.TabIndex = 0;
             this.txtUserName.Text = "Username";
             this.txtUserName.Enter += new System.EventHandler(this.txtUserName_Enter);
@@ -129,11 +129,11 @@
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(248)))), ((int)(((byte)(252)))));
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Font = new System.Drawing.Font("Cabin", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.Gray;
             this.txtPassword.Location = new System.Drawing.Point(5, 9);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(225, 22);
+            this.txtPassword.Size = new System.Drawing.Size(225, 24);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.Text = "Password";
             this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
@@ -152,7 +152,7 @@
             // 
             this.btnSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(134)))), ((int)(((byte)(222)))));
             this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.Font = new System.Drawing.Font("Cabin", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignIn.ForeColor = System.Drawing.Color.White;
             this.btnSignIn.Location = new System.Drawing.Point(500, 329);
             this.btnSignIn.Name = "btnSignIn";
@@ -166,12 +166,12 @@
             // 
             this.linkSignUp.ActiveLinkColor = System.Drawing.SystemColors.ControlDark;
             this.linkSignUp.AutoSize = true;
-            this.linkSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkSignUp.Font = new System.Drawing.Font("Cabin", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkSignUp.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.linkSignUp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
             this.linkSignUp.Location = new System.Drawing.Point(642, 377);
             this.linkSignUp.Name = "linkSignUp";
-            this.linkSignUp.Size = new System.Drawing.Size(101, 16);
+            this.linkSignUp.Size = new System.Drawing.Size(83, 16);
             this.linkSignUp.TabIndex = 9;
             this.linkSignUp.TabStop = true;
             this.linkSignUp.Text = "Sign Up Here";
@@ -180,22 +180,22 @@
             // lblDntHvAcc
             // 
             this.lblDntHvAcc.AutoSize = true;
-            this.lblDntHvAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDntHvAcc.Font = new System.Drawing.Font("Cabin", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDntHvAcc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(92)))), ((int)(((byte)(110)))));
             this.lblDntHvAcc.Location = new System.Drawing.Point(497, 377);
             this.lblDntHvAcc.Name = "lblDntHvAcc";
-            this.lblDntHvAcc.Size = new System.Drawing.Size(151, 16);
+            this.lblDntHvAcc.Size = new System.Drawing.Size(139, 16);
             this.lblDntHvAcc.TabIndex = 10;
             this.lblDntHvAcc.Text = "Don\'t Have an Account?";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Cabin", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
             this.label1.Location = new System.Drawing.Point(586, 578);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 13);
+            this.label1.Size = new System.Drawing.Size(202, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "© Seaside South Park. All Rights Reserved.";
             // 

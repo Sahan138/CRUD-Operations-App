@@ -17,6 +17,17 @@ namespace SeasideSouthPark
             InitializeComponent();
         }
 
+        private static formAbout instance;
+
+        public static formAbout getInstance()
+        {
+            if (instance == null || instance.IsDisposed)
+                instance = new formAbout();
+            else 
+                instance.BringToFront();
+            return instance;
+        }
+
         private void btnClose_MouseEnter(object sender, EventArgs e)
         {
             btnClose.Size = new Size(21, 21);
@@ -80,11 +91,6 @@ namespace SeasideSouthPark
         private void btnANLi_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://www.linkedin.com/in/anuda-nethmin-67191614a/");
-        }
-
-        private void pnlAboutBG_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

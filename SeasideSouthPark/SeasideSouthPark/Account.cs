@@ -22,7 +22,7 @@ namespace SeasideSouthPark
             uName = username;
             InitializeComponent();
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\CRUD-Operations-App-master\CRUD-Operations-App-master\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
             string qry = "Select FName,LName,Email,Phone,City,Country from tblUser where Username='" + uName + "'";
             SqlDataAdapter sda = new SqlDataAdapter(qry, con);
             DataSet ds = new DataSet();
@@ -92,7 +92,7 @@ namespace SeasideSouthPark
                 }
             }
 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\CRUD-Operations-App-master\CRUD-Operations-App-master\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
             SqlCommand cmd = new SqlCommand("Update tblUser set ProImg(@Pic) where Username='" + uName + "'", con);
             MemoryStream stream = new MemoryStream();
 
@@ -115,7 +115,7 @@ namespace SeasideSouthPark
                 con.Close();
             }
 
-            SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\CRUD-Operations-App-master\CRUD-Operations-App-master\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
             SqlCommand command = new SqlCommand("Select ProImg from tblUser where Username='" + uName + "'", connect);
 
             SqlDataAdapter dp = new SqlDataAdapter(command);
@@ -292,6 +292,7 @@ namespace SeasideSouthPark
         {
             if (txtCurrentPass.Text.Length < 1)
             {
+                txtCurrentPass.PasswordChar = '\0';
                 txtCurrentPass.Text = "Current Password";
                 txtCurrentPass.ForeColor = Color.Gray;
             }
@@ -311,6 +312,7 @@ namespace SeasideSouthPark
         {
             if (txtNewPass.Text.Length < 1)
             {
+                txtNewPass.PasswordChar = '\0';
                 txtNewPass.Text = "New Password";
                 txtNewPass.ForeColor = Color.Gray;
             }
@@ -334,7 +336,7 @@ namespace SeasideSouthPark
                 string currentpass = txtCurrentPass.Text;
                 string newpass = txtNewPass.Text;
 
-                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\CRUD-Operations-App-master\CRUD-Operations-App-master\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
                 string qry = "Update tblUser Set FName='"+fname+ "', LName='" + lname + "', Email='" + email + "', Phone='" + phone + "', City='" + city + "', Country='" + country + "', Password='" + newpass + "' Where Username ='" + uName + "'";
                 SqlCommand cmd = new SqlCommand(qry, con);
 
@@ -376,7 +378,7 @@ namespace SeasideSouthPark
                     txtNewPass.Text = "New Password";
                     txtNewPass.ForeColor = Color.Gray;
 
-                    SqlConnection con2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Documents\GitHub\CRUD-Operations-App\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
+                    SqlConnection con2 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\CRUD-Operations-App-master\CRUD-Operations-App-master\SeasideSouthPark\SeasideDB.mdf;Integrated Security=True;Connect Timeout=30");
                     string qry2 = "Select FName,LName,Email,Phone,City,Country from tblUser where Username='" + uName + "'";
                     SqlDataAdapter sda = new SqlDataAdapter(qry2, con2);
                     DataSet ds = new DataSet();
